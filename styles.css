@@ -1,0 +1,58 @@
+/* Ensure the body and page-container fill the viewport */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e293b, #3b82f6);
+    color: #fff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Container for the entire page */
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allows the main content to grow and push the footer down */
+  }
+  
+  /* Crypto container styling */
+  .crypto-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Individual cryptocurrency rows */
+  .crypto {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover animation */
+  }
+  
+  /* Hover effect for cryptocurrency rows */
+  .crypto:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Highlight background */
+    transform: scale(1.03); /* Slight zoom effect */
+    cursor: pointer;
+  }
+  
+  /* Footer styling */
+  .footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #aaa;
+    background-color: rgba(0, 0, 0, 0.2); /* Optional footer background */
+    margin-top: auto; /* Pushes the footer to the bottom */
+  }
+  
